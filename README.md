@@ -22,9 +22,9 @@ Essa aplicação tem como função remover duplicação do fim de cada palavra d
 - A string de entrada é separada em um array de palavras.
 - Para cada palavra no array, é feita uma requisição para a função busca_repeticao().
 - Na função busca_repeticao(), para palavras:
-    De dois caracteres -> é verificada a repetição do primeiro caractere.
-    De tamanho ímpar -> é desconsiderado o primeiro caractere e são comparados os subsequentes.
-    De tamanho par -> é verificada a repetição em pares de caracteres, a partir do último.
+    1. De dois caracteres -> é verificada a repetição do primeiro caractere.
+    2. De tamanho par -> é verificada a repetição em pares de caracteres, a partir do último.
+    3. De tamanho ímpar -> é desconsiderado o primeiro caractere e são comparados os subsequentes.
 - Um contador ("changes") verifica a quantidade de mudanças feitas e, se todas as palavras tiverem repetições, é retornada a nova frase, sem duplicações.
 - Caso contrário, é retornada a frase original, pois nem todas as palavras são duplicadas.
 - Finalmente, a resposta é imprimida com a adição de um ponto final.
